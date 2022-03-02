@@ -1,0 +1,4 @@
+DB name: %dbname%
+Host: %host%
+Password: %password%
+User: %user%

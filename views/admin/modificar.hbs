@@ -1,0 +1,36 @@
+<div class="container" style="margin: 50px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Edit entry</h4>
+            <form method="post" action="/admin/novedades/modificar">
+            <input type="hidden" value="{{novedad.id}}" name="id">
+            
+             <div class="mb-3">
+                 <input type="text" placeholder="Image Link" class="form-control" name="img_url" value="{{novedad.img_url}}">
+             </div>
+            <div class="mb-3">
+                <textarea placeholder="Header" class="form-control" name="header">{{novedad.header}}</textarea>
+            </div>
+
+            <div class="mb-3">
+                <textarea placeholder="Description" class="form-control" name="description">{{novedad.description}}</textarea>
+            </div>
+
+
+            <div class="mb-3">
+                <textarea placeholder="Github Link" class="form-control" name="url">{{novedad.url}}</textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"> Summit </button>
+            
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+
+            </form>
+        
+        
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<main class="holder novedades">
+    <h2> Keyboars you can order right now </h2>
+    <div class="col-3">
+          <form class="d-flex text-right"> 
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}} >
+            {{#if is_search}}
+            {{#unless novedades.length}}
+                    can not find result for"<strong>{{q}}</strong>"
+            {{/unless}}
+        {{/if}}
+            
+            <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+             </form>
+
+
+        </div>
+
+    </div>
+
+    {{#each novedades}}
+    <div class="servicio">
+        
+        <div class="info">
+            <h4>{{header}}</h4>
+            <div class="alinear-columnado" style="margin-bottom:20px;">
+            <img class="images" style="width: 20vw; height:max-content;" src="{{img_url}}" alt="keyboard">
+            <p style="margin: 30px;">{{description}} </p>
+            </div>
+            <a style="margin: 10px; margin-left:15px;" href="{{url}}"><button class="btn btn-secondary" type="submit"><i class="fab fa-github" aria-hidden="true">Github</i></button></a>
+        </div>
+    </div>
+    {{/each}}
+
+
+    
+</main>
+
+<!--<button ></button>*/-->

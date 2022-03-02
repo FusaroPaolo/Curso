@@ -1,0 +1,41 @@
+<main class="holder">
+    <div class="columna left">
+        <h2>Direct Contact</h2>
+        <form action="/contacto" method="post" class="formulario FondoDeTexto" >
+            <p>
+                <label for="">Name</label>
+                <input type="text" name="nombre"/>
+            </p>
+            <p>
+                <label for="">Email</label>
+                <input type="text" name="email"/>
+            </p>
+            <p>
+                <label for="">Tel</label>
+                <input type="text" name="tel"/>
+            </p>
+            <p>
+                <label for="mensaje">Comment</label>
+                <textarea name="mensaje"></textarea>
+            </p>
+            <p class="acciones"><input type="submit" value="Send"></p>
+        </form>
+        {{#if message}}
+        <div class="CajaDeTexto"><p>{{message}}</p></div>
+        {{/if}}
+    </div>
+    <br>
+    <div class=" columna right CajaDeTexto">
+
+        <h2>Other ways to contact us</h2>
+        <p>You can also talk to our pernal directly...</p>
+        <ul>
+            <li>Tel: 4578-7894</li>
+            <li>Email: contacto@transportesX.com.ar</li>
+            <li>Facebook: faibuk</li>
+            <li>Twettar: tuiter</li>
+            <li>Skype: esquipe</li>
+        </ul>
+    </div>
+    </br>
+</main>

@@ -1,0 +1,31 @@
+<div class="container" style="margin:50px auto">
+<div class="row">
+    <div class="col-6 offset-3">
+        <h4>Add new entry </h4>
+        <form action="/admin/novedades/agregar" method="post">
+        
+             <div class="mb-3">
+                 <input type="text" placeholder="Image Link" class="form-control" name="img_url">
+             </div>
+            <div class="mb-3">
+                <textarea placeholder="Header" class="form-control" name="header"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <textarea placeholder="Description" class="form-control" name="description"></textarea>
+            </div>
+
+
+            <div class="mb-3">
+                <textarea placeholder="Github Link" class="form-control" name="url"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"> Summit </button>
+        </form>
+
+        {{#if error}}
+                 <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>
+</div>
