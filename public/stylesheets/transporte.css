@@ -1,0 +1,381 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body{
+    background-image: url("/images/1062.jpg");
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-image: url("/images/home/bannerBackgroundImage.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em 0;
+
+
+}
+
+header h1{
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    font-family: Impact;
+ 
+    color:#142d4c; 
+    font-size: 4.5em;
+    
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.images{
+    width: 100%;
+    height:auto;
+
+    max-width: 50vw;
+}
+
+nav{
+    background-color: #385170;
+    margin-bottom: 2em;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+    background-color: #385170;
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+footer{
+    background-color: #142d4c;
+    clear: both;
+    color: white;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+
+.left{
+    float: left;
+    
+}
+
+.right{
+    float: right;
+    
+}
+
+.gapbottom{
+    margin-bottom: 20px;
+}
+
+.homeimg{
+    margin-bottom: 1.5em;
+}
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+
+.CajaDeTexto{
+    background-color: #142d4c;
+    background-color: rgba(20,46,77,0.9);
+    padding: 2%;
+   /* border-radius: 2%; */
+    
+}
+ 
+.CajaDeTexto p{
+    color: white;
+    
+    
+}
+
+.CajaDeTexto li{
+    color: white;
+}
+
+.FondoDeTexto label{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%;
+}
+.table{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%;
+}
+
+.row p{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%; 
+}
+
+.novedades{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%;
+}
+
+.novedades news{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+}
+
+/*
+.novedades h4{
+    background: #9fd3c7; 
+}
+.novedades p{
+    background:#385170; 
+    color: white;
+}
+*/
+
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #142d4c;
+    padding: 1em;
+}
+
+.testimonio .cita{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio .autor{
+    background-color: rgba(255,255,255,0.8);
+    padding: 2%;
+    font-size: 1em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+
+.historia p{
+    font-size: 0.8mm;
+}
+
+.personas{
+    overflow: hidden;
+}
+
+.persona{
+    
+    background-color: rgba(255,255,255,0.8);
+    font-weight: bold;
+    width: 18%;
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+
+.persona{
+    text-align: center;
+}
+
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin: 0.8em 0 1em;
+}
+
+.persona h5, .persona h6{
+    font-weight: bold;
+    text-align: center;
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0;
+}
+
+.persona h5{
+    font-size: 1em;
+}
+
+.persona h6{
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.persona p{
+    font-size: 0.7em;
+    color: #444;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child{
+    margin-left: 0;
+}
+
+
+.alinear-columnado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+.servicio{
+    border: 1px solid gray;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+    background-color: rgba(255,255,255,1);
+}
+
+.servicio .info{
+    width: 95%;
+}
+
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.servicio img{
+    border-radius: 0.8em;
+}
+
+/*inicio galeria*/
+
+.galeria .foto{
+    display: inline block;
+    width: 18%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    float: left;
+}
+
+.galeria .foto img:hover{
+    outline-color: red;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+
+
+
+
+.columna {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.left{
+    border-right: 1px solid gray;
+}
+
+
+.columna.right p{
+    font-size: 0.9em;
+}
+
+.columna.right ul li{
+    font-size: 0.8em;
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea{
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+
+.formulario .acciones{
+    text-align: center;
+}
+
